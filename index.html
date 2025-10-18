@@ -29,45 +29,43 @@
         <p data-testid="test-user-time" id="current-time"></p>
 
         <nav data-testid="test-user-social-links" aria-label="Social Links">
-          <ul>
-            <li>
-                <button> 
-              <a
-                href="https://twitter.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-testid="test-user-social-twitter"
-              >
-                Twitter
-              </a>
-              </button>
-            </li>
-            <li>
-                <button>
-              <a
-                href="https://github.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-testid="test-user-social-github"
-              >
-                GitHub
-              </a>
-              </button>
-            </li>
-            <li>
-                <button> 
-              <a
-                href="https://linkedin.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-testid="test-user-social-linkedin"
-              >
-                LinkedIn
-              </a>
-              </button>
-            </li>
-          </ul>
-        </nav>
+  <ul>
+    <li>
+      <a
+        href="https://twitter.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-testid="test-user-social-twitter"
+        class="social-link"
+      >
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://github.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-testid="test-user-social-github"
+        class="social-link"
+      >
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://linkedin.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-testid="test-user-social-linkedin"
+        class="social-link"
+      >
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+    </li>
+  </ul>
+</nav>
+
 <div class="profile-extra">
   <section data-testid="test-user-hobbies">
     <h3>Hobbies</h3>
@@ -92,5 +90,9 @@
   </main>
 
   <script src="script.js"></script>
+
+  <link 
+rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
 </body>
 </html>
