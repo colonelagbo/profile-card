@@ -1,0 +1,107 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 2rem;
+  background-color: #f3f4f6;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  min-height: 100vh;
+}
+
+.profile-card {
+  background-color: rgb(220, 211, 211);
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1rem;              
+  width: 300px;               
+  max-width: 90%;             
+  display: flex;
+  flex-direction: column;
+  align-items: center;        
+  text-align: center;
+  gap: 0.8rem;                
+  transition: all 0.3s ease;
+ 
+}
+
+
+.profile-card:hover {
+  transform: translateY(-5px);
+}
+
+.profile-avatar img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-details h2 {
+  margin: 0;
+  color: #1f2937;
+}
+
+.profile-details p {
+  color: #4b5563;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; 
+  gap: 2rem;
+  padding: 0;
+}
+
+nav a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+section h3 {
+  margin-bottom: 0.5rem;
+  color: #2b4784;
+}
+
+ul li {
+  color: #446fb3;
+}
+
+.profile-extra {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  flex-wrap: wrap; 
+  width: 100%;
+}
+
+.profile-extra section {
+  text-align: center;
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .profile-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-extra {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .profile-extra section {
+    flex: 1 1 45%;
+    text-align: left;
+  }
+}
+

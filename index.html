@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <article data-testid="test-profile-card" class="profile-card">
+      <figure class="profile-avatar">
+        <img
+          src="my-photo.jpg"
+          alt="User avatar"
+          data-testid="test-user-avatar"
+        />
+      </figure>
+
+      <div class="profile-details">
+        <header>
+          <h2 data-testid="test-user-name">Emmanuel Agbo</h2>
+        </header>
+
+        <p data-testid="test-user-bio">
+          Frontend developer passionate about building sleek, accessible, and responsive web apps.
+        </p>
+
+        <p data-testid="test-user-time" id="current-time"></p>
+
+        <nav data-testid="test-user-social-links" aria-label="Social Links">
+          <ul>
+            <li>
+                <button> 
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-twitter"
+              >
+                Twitter
+              </a>
+              </button>
+            </li>
+            <li>
+                <button>
+              <a
+                href="https://github.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-github"
+              >
+                GitHub
+              </a>
+              </button>
+            </li>
+            <li>
+                <button> 
+              <a
+                href="https://linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-linkedin"
+              >
+                LinkedIn
+              </a>
+              </button>
+            </li>
+          </ul>
+        </nav>
+<div class="profile-extra">
+  <section data-testid="test-user-hobbies">
+    <h3>Hobbies</h3>
+    <ul>
+      <li>Reading</li>
+      <li>Coding</li>
+      <li>Music</li>
+    </ul>
+  </section>
+
+  <section data-testid="test-user-dislikes">
+    <h3>Dislikes</h3>
+    <ul>
+      <li>Spam</li>
+      <li>Delays</li>
+      <li>Untidy code</li>
+    </ul>
+  </section>
+</div>
+
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
